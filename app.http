@@ -1,0 +1,28 @@
+
+//List of all players 
+GET  http://localhost:3001/players/
+
+### //specific player based on playerId
+GET http://localhost:3001/players/2/
+
+
+### //Update details //Space between Request and Content 
+PUT http://localhost:3001/players/2/
+
+Content-Type: application/json
+{
+  "playerName": "Raju"
+}
+
+### Match details of specific match 
+GET http://localhost:3001/matches/18/
+
+### List of all matches of a player 
+GET http://localhost:3001/players/1/matches
+
+### List of all players of a match
+GET http://localhost:3001/matches/2/players 
+
+### Statistics of a player based on playerId
+GET http://localhost:3001/players/1/playerScores
+
